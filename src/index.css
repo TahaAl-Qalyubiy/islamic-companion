@@ -8,7 +8,7 @@ body {
 :root {
 	--background: #f8f5ef;
 	--surface: #ffffff;
-	--primary: #2e7d32;
+	--primary: #055309eb;
 	--text: #1f2937;
 	--muted: #6b7280;
 	--border: #e5e7eb;
@@ -17,8 +17,27 @@ body {
 .dark {
 	--background: #0f172a;
 	--surface: #1e293b;
-	--primary: #4ade80;
+	--primary: #036d2a;
 	--text: #f8fafc;
 	--muted: #94a3b8;
 	--border: #334155;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--background-body);
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(180deg, #e63946, #457b9d);
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(180deg, #d62828, #1d3557);
 }
