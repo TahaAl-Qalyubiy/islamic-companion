@@ -1,10 +1,11 @@
-import React from "react";
-import MainPage from "./components/MainPage";
+import HeaderBar from "./components/HeaderBar";
+import { Outlet } from "react-router-dom";
 
 function App() {
 	return (
 		<>
-			<MainPage />
+			<HeaderBar />
+			<Outlet />
 		</>
 	);
 }

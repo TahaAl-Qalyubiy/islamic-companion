@@ -1,5 +1,5 @@
 import React from "react";
-import PrayerCard from "./PrayerCard";
+import PrayerCard from "../components/PrayerCard";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
@@ -30,8 +30,8 @@ function MainPage() {
 			<Container maxWidth="lg">
 				<Grid container spacing={{ xs: 3, md: 4, lg: 12 }} className="py-16">
 					<Grid size={{ xs: 12, sm: 4 }} className="my-auto">
-						<Paper className="text-center rounded-xl! py-3 bg-(--background)!">
-							<Typography variant="h5" className="">
+						<Paper className="text-center rounded-xl! py-3 bg-(--background)! text-(--text)!">
+							<Typography variant="h5">
 								فَأَقِيمُوا الصَّلَاةَ ۚ إِنَّ الصَّلَاةَ كَانَتْ عَلَى
 								الْمُؤْمِنِينَ كِتَابًا مَّوْقُوتًا
 							</Typography>
@@ -41,7 +41,7 @@ function MainPage() {
 					<Grid size={{ xs: 12, sm: 4 }} className="my-auto">
 						<Paper
 							elevation={3}
-							className="text-center rounded-xl! pt-8 pb-3 bg-(--background)!"
+							className="text-center rounded-xl! pt-8 pb-3 bg-(--background)! text-(--text)!"
 						>
 							<Typography variant="h6">الصلاة القادمة</Typography>
 							<Typography variant="h3">العصر</Typography>
@@ -57,11 +57,15 @@ function MainPage() {
 					<Grid size={{ xs: 12, sm: 4 }}>
 						<Stack spacing={2} className="items-end!">
 							<Paper className="text-center rounded-xl! bg-(--background)! flex justify-evenly py-8 w-full sm:w-4/5">
-								<Typography variant="h4">القاهرة, مصر</Typography>
+								<Typography variant="h4" className="text-(--text)!">
+									القاهرة, مصر
+								</Typography>
 								<LocationOnOutlinedIcon className="text-(--primary)! text-4xl!" />
 							</Paper>
 							<Paper className="text-center rounded-xl! bg-(--background)! flex justify-evenly py-8 w-full">
-								<Typography variant="h5">السبت 9 سبتمبر 2026</Typography>
+								<Typography variant="h5" className="text-(--text)!">
+									السبت 9 سبتمبر 2026
+								</Typography>
 								<CalendarTodayOutlinedIcon className="text-(--primary)! text-4xl!" />
 							</Paper>
 						</Stack>
