@@ -6,9 +6,9 @@ import Alquran from "./pages/Alquran";
 function App() {
 	return (
 		<>
-      <MainPage/>
+			<HeaderBar />
+			<Outlet />
 		</>
-	);
 }
 
 export default App;
