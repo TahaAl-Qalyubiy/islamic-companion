@@ -1,7 +1,6 @@
 import React from "react";
-import MainPage from "./components/MainPage";
-import Kaabe from "./pages/Kaabe";
-import Alquran from "./pages/Alquran";
+import HeaderBar from "./components/HeaderBar";
+import { Outlet } from "react-router-dom";
 
 function App() {
 	return (
@@ -9,6 +8,7 @@ function App() {
 			<HeaderBar />
 			<Outlet />
 		</>
+	);
 }
 
 export default App;

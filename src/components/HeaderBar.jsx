@@ -17,7 +17,7 @@ import {
 export const navLinks = [
 	{ name: "الرئيسية", icon: House, path: "/" },
 	{ name: "مواقيت الصلاة", icon: Clock3, path: "/PrayerTimes" },
-	{ name: "القبلة", icon: Compass, path: "/kiss" },
+	{ name: "القبلة", icon: Compass, path: "/Kaabe" },
 	{ name: "القرآن", icon: BookOpen, path: "/Quran" },
 	{ name: "الأذكار", icon: Bookmark, path: "/Remembrances" },
 	{ name: "التقويم", icon: CalendarDays, path: "/Calendar" },
