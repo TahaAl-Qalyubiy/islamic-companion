@@ -60,7 +60,7 @@ export default function Header() {
 				</div>
 
 				{/* Desktop Navigation */}
-				<nav className="hidden items-center gap-2 lg:flex">
+				<nav className="hidden items-center  lg:flex">
 					{navLinks.map((item) => {
 						const Icon = item.icon;
 
