@@ -1,5 +1,6 @@
 import React from "react";
 import PrayerCard from "../components/PrayerCard";
+import HeroSection from "../components/HeroSection ";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
@@ -8,6 +9,7 @@ import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import Typography from "@mui/material/Typography";
 import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
 import { prayers } from "../data/prayers";
+import { BookOpenText } from "lucide-react";
 
 function MainPage() {
 	return (
@@ -24,6 +26,7 @@ function MainPage() {
     before:inset-0
     before:bg-black/15
 	before:content-['']
+	before:pointer-events-none
 	
 "
 		>
@@ -85,6 +88,29 @@ function MainPage() {
 						</Grid>
 					))}
 				</Grid>
+
+				<HeroSection />
+				<Paper
+					className="flex justify-evenly flex-col-reverse sm:flex-row pt-6 sm:pt-0 items-center rounded-xl! bg-(--primary)! text-gray-50! relative
+	before:absolute
+    before:inset-0 before:bg-black/0"
+				>
+					<button className="cursor-pointer z-20 text-center  px-4 py-2 my-6 border-2 border-(--border) rounded-2xl">
+						<BookOpenText className="inline" />
+						<span className="pr-1 font-medium"> تصفح القرآن</span>
+					</button>
+					<div className="flex items-center gap-3">
+						<div>
+							<h1 className="text-xl font-bold tracking-wider text-end">
+								القرآن الكريم
+							</h1>
+							<p className="text-md -tracking-widestr">اقرأ كلام الله الكريم</p>
+						</div>
+						<div className="flex h-20 w-20 items-center justify-center">
+							<img src="/img/logo2.jpg" alt="logo" className=" pt-3" />
+						</div>
+					</div>
+				</Paper>
 			</Container>
 		</div>
 	);
