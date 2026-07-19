@@ -90,6 +90,7 @@ function MainPage() {
 				</Grid>
 
 				<HeroSection />
+
 				<Paper
 					className="flex justify-evenly flex-col-reverse sm:flex-row pt-6 sm:pt-0 items-center rounded-xl! bg-(--primary)! text-gray-50! relative
 	before:absolute
