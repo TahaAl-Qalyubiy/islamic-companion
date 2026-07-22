@@ -46,12 +46,19 @@ body {
 	box-shadow: 0 0 20px 18px #e7e1e1a1;
 }
 
+@media (max-width: 765px) {
+	.surah{
+  box-shadow:6px -14px 20px 3px var(--background);
+
+}
+}
 @media (min-width: 1024px) {
 	.container {
 		max-width: 1024px;
 	}
 	.kaabe {
 		box-shadow: 0px 1px 20px 20px #dddbdb91;
+    
 	}
 }
 @media (min-width: 1280px) {
@@ -61,4 +68,26 @@ body {
 	.kaabe {
 		box-shadow: 0px 1px 20px 20px #dddbdb91;
 	}
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

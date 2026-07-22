@@ -11,6 +11,8 @@ import {
 import App from "./App";
 import MainPage from "./pages/MainPage";
 import Kaabe from "./pages/Kaabe";
+import Alquran from "./pages/Alquran";
+import SurahPage from "./pages/SurahPage";
 import PrayerTimes from "./pages/PrayerTimes";
 
 const router = createBrowserRouter(
@@ -19,9 +21,10 @@ const router = createBrowserRouter(
 			<Route index element={<MainPage />} />
 			<Route path="PrayerTimes" element={<PrayerTimes />} />
 			<Route path="Kaabe" element={<Kaabe />} />
-			<Route path="Quran" element={""} />
+			<Route path="Quran" element={<Alquran/>} />
 			<Route path="Remembrances" element={""} />
 			<Route path="Calendar" element={""} />
+      <Route path="/quran/:id" element={<SurahPage />} />
 		</Route>,
 	),
 );
